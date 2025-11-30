@@ -1,0 +1,58 @@
+{
+  "project_info": {
+    "project_number": "495192078638",
+    "firebase_url": "https://createreadfirebase.firebaseio.com",
+    "project_id": "createreadfirebase",
+    "storage_bucket": "createreadfirebase.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495192078638:android:b73f8e4e7045945eea22bf",
+        "android_client_info": {
+          "package_name": "com.example.createreadfirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "495192078638-u62mdo1ejciqr3oniqd9f98c98sno6g6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.createreadfirebase",
+            "certificate_hash": "2b1e93f3cd07e1675b7c59613c1e5aea71c41472"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5g4NIw0n9yfUbRHoDB7Yxw-OKtfAHiz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:495192078638:android:6d6d796ee308c608ea22bf",
+        "android_client_info": {
+          "package_name": "e_music.android"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB5g4NIw0n9yfUbRHoDB7Yxw-OKtfAHiz4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

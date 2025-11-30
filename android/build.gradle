@@ -1,0 +1,61 @@
+// buildscript {
+//     ext.kotlin_version = '1.9.20'
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+// }
+// allprojects {
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+// }
+
+// rootProject.buildDir = "../build"
+// subprojects {
+//     project.buildDir = "${rootProject.buildDir}/${project.name}"
+// }
+// subprojects {
+//     project.evaluationDependsOn(":app")
+// }
+
+// tasks.register("clean", Delete) {
+//     delete rootProject.buildDir
+// }
+
+
+buildscript {
+    // Menurunkan versi Kotlin untuk compatibility jika 1.9.20 bermasalah
+    ext.kotlin_version = '1.7.10' 
+    repositories {
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        // Deklarasi versi Android Gradle Plugin (AGP) sangat penting
+        // Coba versi 7.3.0 yang umum dipakai Flutter
+        classpath 'com.android.tools.build:gradle:7.3.0' 
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.buildDir = "../build"
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(":app")
+}
+
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}
